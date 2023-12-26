@@ -1,0 +1,85 @@
+.skills{
+    @include styleCover('http://massivemarkup.lab.themebucket.net/assets/img/parallax/4.jpg');
+    color: $c-white-0;
+    position: relative;
+    .overlay{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background-color: $c-black-4;
+        
+    }
+    .skills__content{
+        .skills__left{
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            @include styleText($c-white-0,$fs-4,$fw-0);
+            letter-spacing: $ls-1 + 1;
+        }
+        .skills__right{
+            padding: 0 $pd-6;
+            .skills__text{
+                h4{
+                    @include styleText($c-white-0,$fs-5,$fw-0);
+                    letter-spacing: $ls-2;
+                    margin-bottom: $mg-0;
+                }
+                p{
+                    @include styleText($c-white-0,$fs-3,$fw-0);
+                    line-height: $lh-2 + 5;
+                    margin-bottom: $mg-0;
+                }
+            }
+            .skills__bars{
+                .skills__bar{
+                    margin: $mg-3 0 $mg-6;
+                    height: 20px;
+                    letter-spacing: $ls-2;
+                    border-radius: 0;
+                    background-color: $c-gray-5;
+                    overflow: visible;
+                    .progress-bar{
+                        background-color: $c-white-0;
+                        @include styleText($c-black-3,$fs-0 - 3,$fw-2);
+                        position: relative;
+                        overflow: visible;
+                        text-align: start;
+                        padding-left: $pd-5;
+                        p{
+                            margin-bottom: 0;
+                        }
+                        span{
+                            position: absolute;
+                            background-color: $c-gray-3!important;
+                            display: inline-block;
+                            width: 30px;
+                            height: 20px;
+                            top: -28px;
+                            right: -5px;
+                            border-radius: $br-1;
+                            line-height: $lh-3;
+                            text-align: center;
+                            letter-spacing: 0;
+                            &::before{
+                                content: '';
+                                display: block;
+                                width: 5px;
+                                height: 5px;
+                                position: absolute;
+                                bottom: -2px;
+                                left: 15px;
+                                transform: rotate(45deg);
+                                background-color: $c-gray-3;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

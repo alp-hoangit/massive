@@ -1,0 +1,20 @@
+#parallax.parallax-inner.parallax-8{
+    @include styleCover('http://massivemarkup.lab.themebucket.net/assets/img/parallax/8.jpg');
+}
+
+.tab-parallax{
+    @include styleCover('http://massivemarkup.lab.themebucket.net/assets/img/pattern-2.png');
+    background-repeat: repeat;
+}
+
+.tab-parallax{
+    ul.nav-pills{
+            width: 90%;
+            display: flex!important;
+            justify-content: space-around;
+            align-items: center;
+        li:focus{
+            background-color: $c-white-0!important;
+        }
+    }
+}

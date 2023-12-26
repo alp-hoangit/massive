@@ -1,0 +1,38 @@
+.creative {
+    .creative__content {
+        .creative__items {
+            .creative__item {
+                padding: 0 $pd-2;
+                .creative__itemContent {
+                    padding: $pd-2;
+                    border: 1px solid $c-gray-4;
+                    border-radius: $br-0;
+                    position: relative;
+                    .creative__icon{
+                        i{
+                            width: 60px;
+                            height: 60px;
+                            color: $c-white-0;
+                            background-color: $c-black-3;
+                            line-height: 60px;
+                            text-align: center;
+                            position: absolute;
+                            border-radius: $br-0;
+                            box-shadow: 0 0 0 10px $c-white-0;
+                            font-size: $fs-6;
+                            top: -15%;
+                        }
+                    }
+                    .creative__itemText{
+                        h4{
+                            margin: $mg-0 0;
+                        }
+                        p{
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

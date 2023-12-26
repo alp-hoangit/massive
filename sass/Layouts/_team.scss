@@ -1,0 +1,149 @@
+.team {
+    .team__content {
+        padding: 0;
+
+        .team__item {
+            padding: 0 30px;
+
+            &:hover .team__overlay {
+                opacity: 1;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            .team__text {
+                background-color: $c-black-5;
+                position: absolute;
+                right: 0;
+                bottom: 30px;
+                width: 70%;
+                padding: 10px $pd-3;
+                margin: 0 30px;
+
+                h5 {
+                    color: $c-white-0;
+                    letter-spacing: $ls-2;
+                    font-size: $fs-0 + 1;
+                }
+
+                p {
+                    color: $c-white-2;
+                    font-size: $fs-0 - 1;
+                    letter-spacing: $ls-2;
+                    margin-bottom: 0;
+                }
+            }
+
+            .team__overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                border: 20px solid rgba(0, 0, 0, .1);
+                background-color: rgba(255, 255, 255, .9);
+                width: 84.5%;
+                height: 100%;
+                transition: all .5s;
+                opacity: 0;
+                margin: 0 30px;
+
+                .overlayContent {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 100%;
+                    padding: 0 $pd-3 + 5;
+
+                    .team__overlayText {
+                        h5 {
+                            margin-bottom: $mg-2 + 5;
+                            letter-spacing: $ls-1 - 1;
+                            font-size: $fs-0 + 1;
+                            color: $c-black-3;
+                        }
+
+                        p {
+                            margin-bottom: 0;
+                            color: $c-gray-1;
+                            font-size: $fs-0 + 1;
+                            font-weight: $fw-0;
+                            line-height: $lh-2 + 5;
+                        }
+                    }
+
+                    .team__overlaySocialNetworks {
+                        margin-top: 130px;
+
+                        a {
+                            text-decoration: none;
+                            color: $c-black-0;
+                            margin: 0 $mg-3;
+                            transition: all .5s;
+
+                            &:hover {
+                                color: $c-yellow-0;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+//HIRING
+
+.hiring {
+    .hiring__contain {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .hiring__content {
+            width: 95%;
+            padding: $pd-2 + 10;
+            background-color: #F5F5F5;
+
+            .hiring__text {
+                h5 {
+                    font-size: $fs-5;
+                    font-weight: normal;
+                    letter-spacing: 1px;
+
+                    span {
+                        color: $c-yellow-0;
+                    }
+                }
+
+                p {
+                    margin-bottom: 0;
+                    color: $c-gray-1;
+                    margin-top: $mg-3;
+                }
+            }
+
+            .hiring__button {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                button{
+                    padding: $pd-4 $pd-2;
+                    background-color: $c-black-3;
+                    color: $c-white-0;
+                    transition: all .5s;
+                    border: none;
+                    letter-spacing: 1px;
+                    &:hover{
+                        background-color: $c-yellow-0;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+
+}

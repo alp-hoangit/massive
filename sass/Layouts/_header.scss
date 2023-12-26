@@ -1,0 +1,39 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    .myNavbar {
+        background-color: transparent;
+        padding: 0 $pd-2;
+        .navbar-brand{
+            margin-right: 0;
+            img {
+                height: 96px;
+                width: auto;
+            }
+        }
+        
+        .navbar-nav {
+            .nav-item {
+                &.active {
+                    .nav-link{
+                        color: $c-yellow-0;
+                    }
+                }
+                .nav-link {
+                    @include styleText($c-white-0, $fs-0, $fw-0);
+                    letter-spacing: .7px;
+                    padding: 0 $pd-0;
+                    line-height: $lh-1;
+                    &:hover {
+                        color: $c-yellow-0;
+                    }
+                    span{
+                        margin-left: $mg-4;
+                    }
+                }
+            }
+        }
+    }
+}

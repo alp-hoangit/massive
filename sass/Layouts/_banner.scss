@@ -1,0 +1,20 @@
+.massiveBanner {
+    height: 100vh;
+    @include styleCover('http://massivemarkup.lab.themebucket.net/assets/img/banner/index-banner-2.jpg');
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    .massiveBanner__content{
+        h2{
+            @include styleText($c-white-0,$fs-1,$fw-1);
+            letter-spacing: $ls-1;
+            margin-bottom: $mg-4 - 2.2;
+        }
+        p{
+            @include styleText($c-white-0,$fs-2,$fw-0);
+            letter-spacing: $ls-1 + 1;
+            margin-bottom: 0;
+        }
+    }
+}
